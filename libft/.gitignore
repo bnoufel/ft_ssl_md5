@@ -1,0 +1,7 @@
+.idea
+cmake-build-debug
+CMakeLists.txt
+objects
+libft.a
+libftprintf.a
+srcs/conversion/float_double/
