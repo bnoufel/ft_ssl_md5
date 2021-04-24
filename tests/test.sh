@@ -13,6 +13,11 @@ failed=0
 total_tests=0
 LINUX=$(uname -ar | awk '{print $1}')
 IS_LINUX=false
+
+if [[ -z $(which openssl) ]]; then
+    printf "%b" "${RED}Openssl is not install !${RESET}\n"
+    exit 1
+fi
 if [[ ${LINUX} == "Linux" ]]; then
 	IS_LINUX=true
 fi
