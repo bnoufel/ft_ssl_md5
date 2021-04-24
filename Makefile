@@ -17,7 +17,7 @@ RESET					=	"\033[0m"
 
 OS                      =       $(shell uname)
 DEBUG                   =       -g3 -fsanitize=address
-CC                      =       $(shell which gcc) -Wall -Werror -Wextra #$(DEBUG)
+CC                      =       $(shell which gcc) -Wall -Werror -Wextra $(DEBUG)
 
 ##############################################################
 ####################### LIBFT & PRINTF #######################
